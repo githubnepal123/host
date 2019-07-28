@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+
+</script>
+</head>
+<body>
+<h3>Contact Us</h3>
+Name:- <input type="Text" ><br>
+Email ID:- <input type="Email"><br>
+Contact No:- <input type="number"><br>
+Message:- <textarea name="Message"></textarea>
+<input type="Submit" value="Submit">
+</body>
+</html>
